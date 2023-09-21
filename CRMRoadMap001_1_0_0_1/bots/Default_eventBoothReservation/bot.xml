@@ -1,0 +1,21 @@
+<bot schemaname="Default_eventBoothReservation">
+  <authenticationmode>1</authenticationmode>
+  <authenticationtrigger>0</authenticationtrigger>
+  <iscustomizable>0</iscustomizable>
+  <language>1033</language>
+  <name>Event Booth Reservation</name>
+  <runtimeprovider>0</runtimeprovider>
+  <synchronizationstatus>{
+  "contentVersion": 2,
+  "currentSynchronizationState": {
+    "botRegistration": {
+      "applicationId": "0adb60ce-1f26-41cb-aa5c-55af73943df3",
+      "isAppAvailableInTenant": true
+    },
+    "provisioningStatus": "Provisioned",
+    "state": "Synchronized"
+  },
+  "lastSynchronizedOnUtc": "2023-09-15T13:30:25.340418Z"
+}</synchronizationstatus>
+  <template>default-2.0.1</template>
+</bot>

@@ -1,0 +1,379 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Untitled
+
+  actions:
+    - kind: AdaptiveCardPrompt
+      id: 74db4A
+      card: |-
+        {
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "type": "AdaptiveCard",
+            "version": "1.5",
+            "body": [
+                {
+                    "type": "ImageSet",
+                    "images": [
+                        {
+                            "type": "Image",
+                            "size": "Small",
+                            "url": "https://powerplatformconf.com/content/images/logos/ppc-logo.svg"
+                        }
+                    ],
+                    "imageSize": "Small"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Please select your Event:",
+                    "wrap": true,
+                    "style": "heading",
+                    "size": "Medium"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "Action.ShowCard",
+                    "title": "Full Conference Only",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " Full Conference Only",
+                                "horizontalAlignment": "Center",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " Price : $1899",
+                                "horizontalAlignment": "Left",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Name",
+                                "id": "id1",
+                                "isRequired": true,
+                                "errorMessage": "Name is required"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Email",
+                                "style": "Email",
+                                "id": "id2"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Phone",
+                                "style": "Tel",
+                                "id": "id3"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "title": "Submit",
+                                "data": {
+                                    "formAction": "submitUserData"
+                                }
+                            }
+                        ]
+                    },
+                    "style": "positive"
+                },
+                {
+                    "type": "Action.ShowCard",
+                    "title": "SHOW PACKAGE - 1 WORKSHOP",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " SHOW PACKAGE - 1 WORKSHOP Includes full conference registration, ONE optional full-day workshop",
+                                "horizontalAlignment": "Center",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " Price : $2399",
+                                "horizontalAlignment": "Left",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Name",
+                                "id": "id4",
+                                "isRequired": true,
+                                "errorMessage": "Name is required"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Email",
+                                "style": "Email",
+                                "id": "id5"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Phone",
+                                "style": "Tel",
+                                "id": "id6"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "title": "Submit",
+                                "data": {
+                                    "formAction": "submitUserData1"
+                                }
+                            }
+                        ]
+                    },
+                    "style": "positive"
+                },
+                {
+                    "type": "Action.ShowCard",
+                    "title": "SHOW PACKAGE - 2 WORKSHOP",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " COMPLETE PACKAGE - 2 WORKSHOPS Includes full conference registration, TWO optional full-day workshops",
+                                "horizontalAlignment": "Center",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " Price : $2899",
+                                "horizontalAlignment": "Left",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Name",
+                                "id": "id7",
+                                "isRequired": true,
+                                "errorMessage": "Name is required"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Email",
+                                "style": "Email",
+                                "id": "id8"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Phone",
+                                "style": "Tel",
+                                "id": "id9"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "title": "Submit",
+                                "data": {
+                                    "formAction": "submitUserData2"
+                                }
+                            }
+                        ]
+                    },
+                    "style": "positive"
+                },
+                {
+                    "type": "Action.ShowCard",
+                    "title": "SHOW PACKAGE - 3 WORKSHOP",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " COMPLETE PACKAGE - 3 WORKSHOPS Includes full conference registration,THREE optional full-day workshops",
+                                "horizontalAlignment": "Center",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "Medium",
+                                "weight": "Bolder",
+                                "text": " Price : $3449",
+                                "horizontalAlignment": "Left",
+                                "wrap": true,
+                                "style": "heading"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Name",
+                                "id": "id10",
+                                "isRequired": true,
+                                "errorMessage": "Name is required"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Email",
+                                "style": "Email",
+                                "id": "id11"
+                            },
+                            {
+                                "type": "Input.Text",
+                                "label": "Phone",
+                                "style": "Tel",
+                                "id": "id12"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "title": "Submit",
+                                "data": {
+                                    "formAction": "submitUserData3"
+                                }
+                            }
+                        ]
+                    },
+                    "style": "positive"
+                }
+            ]
+        }
+      output:
+        binding:
+          actionSubmitId: Topic.actionSubmitId
+          formAction: Topic.formAction
+          id1: Topic.id1
+          id10: Topic.id10
+          id11: Topic.id11
+          id12: Topic.id12
+          id2: Topic.id2
+          id3: Topic.id3
+          id4: Topic.id4
+          id5: Topic.id5
+          id6: Topic.id6
+          id7: Topic.id7
+          id8: Topic.id8
+          id9: Topic.id9
+
+      outputType:
+        properties:
+          actionSubmitId: String
+          formAction: String
+          id1: String
+          id10: String
+          id11: String
+          id12: String
+          id2: String
+          id3: String
+          id4: String
+          id5: String
+          id6: String
+          id7: String
+          id8: String
+          id9: String
+
+    - kind: ConditionGroup
+      id: conditionGroup_gFz8S9
+      conditions:
+        - id: conditionItem_Ac27IE
+          condition: =Topic.formAction = "submitUserData"
+          actions:
+            - kind: SendActivity
+              id: sendActivity_umVALa
+              activity: |-
+                Dear {Topic.id1},
+                
+                You've Successfully registered for **Full Conference Only** event.
+                
+                **Name** : {Topic.id1}               ,
+                
+                **Email** : {Topic.id2}                  ,
+                
+                **Phone**: {Topic.id3}     ,
+                
+                **Price** : $1899
+
+        - id: conditionItem_b5Yrcn
+          condition: =Topic.formAction = "submitUserData1"
+          actions:
+            - kind: SendActivity
+              id: sendActivity_WprzRS
+              activity: |-
+                Dear {Topic.id4},
+                
+                You've Successfully registered for **SHOW PACKAGE - 1 WORKSHOP Includes full conference registration**, **ONE optional full-day workshop** event.
+                
+                **Name** : {Topic.id4}    ,
+                
+                **Email** : {Topic.id5}  ,
+                
+                **Phone**: {Topic.id6}    ,
+                
+                **Price**: $2399
+
+            - kind: ClearAllVariables
+              id: RzPKme
+
+        - id: conditionItem_BFLpkn
+          condition: =Topic.formAction = "submitUserData2"
+          actions:
+            - kind: SendActivity
+              id: sendActivity_wRWPNH
+              activity: |-
+                Dear {Topic.id7},
+                
+                You've Successfully registered for **COMPLETE PACKAGE - 2 WORKSHOPS Includes full conference registration, TWO optional full-day workshops** event.
+                
+                **Name** : {Topic.id7}  ,
+                
+                **Email** : {Topic.id8}   ,
+                
+                **Phone**: {Topic.id9} 
+                
+                **Price**: $2899
+
+            - kind: ClearAllVariables
+              id: 75zSXT
+
+        - id: conditionItem_c9BS6x
+          condition: =Topic.formAction = "submitUserData3"
+          actions:
+            - kind: SendActivity
+              id: sendActivity_O5LhNj
+              activity: |-
+                Dear {Topic.id10},
+                
+                You've Successfully registered for **COMPLETE PACKAGE - 3 WORKSHOPS** **Includes full conference registration, THREE optional full-day workshops** event.
+                
+                **Name** : {Topic.id10}     ,
+                
+                **Email** : {Topic.id11} 
+                
+                **Phone**: {Topic.id12}     ,
+                
+                **Price**: $3449
+
+    - kind: ClearAllVariables
+      id: EvWo1s
